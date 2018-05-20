@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常识问答机器人</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../static/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/default.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    <script type="text/javascript"  src="../static/js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="main">
+        <div class="form-wrapper">
+            <div class="phone">
+			<div class="screen">
+				<div class="lower-screen">
+					<div class="card">
+						<h3>智能问答机器人</h3>
+						<p></p>
+					</div>
+
+					<div class="card">
+						<form enctype="multipart/form-data" method="post">
+                            <input type="text" name="question">
+                            <button type="submit" class="btn btn-primary">
+                                提问 <span class="badge">go!</span></button>
+                        </form>
+						<br>
+					</div>
+
+					<div class="card">
+                        <h4>回复</h4>
+						<h4>{{ answer }}</h4>
+                        <br>
+					</div>
+				</div>
+			</div>
+		</div>
+        </div>
+</div>
+
+</body>
+</html>
