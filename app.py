@@ -29,7 +29,6 @@ def upload_text():
 			# answer = robot.get_response(question)  # 处理程序的接口函数
 
 			return render_template('index.html', answer=answer)
-
 		return render_template('index.html')  # 抛出403异常
 
 

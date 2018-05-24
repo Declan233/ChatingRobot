@@ -8,26 +8,23 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/default.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
     <script type="text/javascript"  src="../static/js/jquery-2.1.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	<script type="text/javascript"  src="../static/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
 </head>
 <body>
-<div class="main">
+
+	<div class="main">
         <div class="form-wrapper">
             <div class="phone">
 			<div class="screen">
 				<div class="lower-screen">
 					<div class="card">
 						<h3>智能问答机器人</h3>
-						<p></p>
 					</div>
 
 					<div class="card">
 						<form enctype="multipart/form-data" method="post">
-                            <input type="text" name="question">
+                            <input type="text" name="question" style="width: 100%;overflow: visible;margin-bottom:10px;padding: 4px;">
                             <button type="submit" class="btn btn-primary">
                                 提问 <span class="badge">go!</span></button>
                         </form>
@@ -39,11 +36,19 @@
 						<h4>{{ answer }}</h4>
                         <br>
 					</div>
+					<div class="card">
+                        <p>目前提供功能：地理知识问答；中译英；闲聊</p>
+						<p>输入内容例如：最长的运河是？</p>
+						<p>输入内容例如：最大的海峡？</p>
+						<p>输入内容例如：最大的山城？</p>
+						<h5>翻译功能格式 :</h5><p>"翻译：内容"</p>
+                        <br>
+					</div>
 				</div>
 			</div>
 		</div>
         </div>
-</div>
+	</div>
 
 </body>
 </html>
